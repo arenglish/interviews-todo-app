@@ -1,0 +1,48 @@
+#shell-grid {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  grid-template-columns: auto 1fr;
+}
+
+#sidebar {
+  background-color: indianred;
+  height: 100vh;
+  width: 200px;
+  box-sizing: border-box;
+  padding: 10px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%
+}
+
+#workspace {
+  background-color: bisque;
+}
+
+#app-title {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.menu-item {
+  background-color: rgba(white, .1);
+  border-radius: 6px;
+  margin-bottom: 10px;
+  padding: 8px;
+  cursor: pointer;
+  &:hover {
+    background-color: rgba(white, .3);
+
+  }
+}

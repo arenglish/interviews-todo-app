@@ -1,0 +1,13 @@
+<div id="shell-grid">
+  <div id="sidebar">
+    <div>
+      <div id="app-title">My Todo's</div>
+      <div class="menu-item" [routerLink]="['']">Home</div>
+      <div class="menu-item" [routerLink]="['add']">Create Todo</div>
+    </div>
+    <div id="footer">
+      <button (click)="logoutButtonClicked()">Logout</button>
+    </div>
+  </div>
+  <div id="workspace"><router-outlet></router-outlet></div>
+</div>
