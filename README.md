@@ -132,7 +132,10 @@ Our intern Billy got an urgent support request in at 2 AM and after starting a g
 > 
 > Uncomment the hideous `app-sample-third-party-component` element in the TodoListComponent and modify the TodoListComponent's ViewEncapsulation so that you can set styles in the TodoListComponent's stylesheet to target and override the '.nifty' class on the SampleThirdPartyComponent to have a black background-color and white color property.
 
+> Consider this: We could accomplish this using a global style in the main app styles.scss file, but the point is to keep these override styles in the component style file that is needing the override to happen for clear style organization, hence needing to modify ViewEncapsulation for the TodoListComponent rather than using the application global styles sheet.  Note that after modifying ViewEncapsulation, some existing Angular specific CSS selectors being used may no longer function and would need to be altered to target their expected elements.
+
 > Research:
 >
 > [Angular View Encapsulation](https://angular.io/guide/view-encapsulation)
 >
+> [Angular Component Styles](https://angular.io/guide/component-styles)
