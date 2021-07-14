@@ -47,7 +47,7 @@ Jake has been on the team for a while, but our product owner Karen didn't inform
 >
 > Create service which implements CanActivate and use it on the application route for the ShellComponent's canActivate guards.
 > 
-> Remove the original authentication logic in the AppComponent and verify that the AppComponent will now not load if your AuthGuard finds that the user's authentication result has a `false` value.
+> Remove the original authentication logic in the AppComponent and verify that the ShellComponent will now not load if your AuthGuard finds that the user's authentication result has a `false` value.
 
 > Research:
 >
